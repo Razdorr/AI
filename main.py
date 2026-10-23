@@ -38,7 +38,7 @@ def search_notes(text):
                     results.append(line.strip())
 
             if results:
-                return '\n'.join(results)
+                return f"Всего нашлось: {len(results)}\n" + '\n'.join(results)
 
             return 'Заметки не найдены.'
 
